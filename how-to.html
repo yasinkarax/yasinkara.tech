@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Articles Yasin Kara - Jr Front End Dev</title>
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/02234e3b3c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row main-row">
+
+            <div class="col- col-l-3  profile" id="profile">
+             
+                <div class="profile-img">
+                        <a href="index.html">
+                            <img class="avatar" src="../images/Ekran Alıntısı.PNG" width="200px" height="200px" alt="Profile picture">
+                        </a>
+                </div>
+ 
+                <div class="author">
+                    <div class="name">
+                        Name
+                    </div>
+                    <div class="title">
+                                Title
+                    </div>
+                </div>
+ 
+                <div class="social-media">
+                    <!-- <div class="web-site">
+                        <a href="http://www.yasinkara.tech" target="_blank" alt="personel web site">
+                            <img src="images/social-media-icons/global.png" alt="web site">
+                           <span class="username">web address<span class="username">
+                        </a>
+                    </div> -->
+                    <div class="stackoverflow">
+                        <a href="https://stackoverflow.com/users/10992077/yasin" target="_blank" alt="stack overflow account">
+                            <img src="/images/social-media-icons/stackoverflow.png" alt="stackoverflow">
+                            <span class="username">
+                                @username
+                            </span>
+                        </a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/yasinkarax" target="_blank" alt="linkedin account">
+                            <img src="/images/social-media-icons/linkedin.png" alt="linkedin">
+                            <span class="username">@username</span>
+                        </a>
+                    </div> 
+                    <div class="github">
+                        <a href="https://www.github.com/yasinkarax" target="_blank" alt="github account">
+                            <img src="/images/social-media-icons/github.png" alt="github">
+                            <span class="username">@username</span>
+                        </a>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://www.twitter.com/yasinkaraxy" target="_blank"  alt="twitter account">
+                            <img src="/images/social-media-icons/twitter.png" alt="twitter">
+                            <span class="username">@username</span>
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/yasinkarax" target="_blank"  alt="instagram account">
+                            <img src="/images/social-media-icons/instagram.png" alt="instagram">
+                            <span class="username">@username</span>
+                        </a>
+                    </div>
+                </div>
+                
+                
+             </div>
+
+
+
+            <!-- space and profile menu's open button -->
+            
+            <div class="col- space" style="position: relative">
+                    <button id="open--profile--menu--icon" onclick="openProfileMenu(this)">
+                        <img src="../images/menu-icon.png" alt="open menu">
+                    </button>
+            </div>
+            
+
+            <!-- mobile menu  -->
+            <div class="col-  mobile--menu" id="mobile--menu" style="height: 98px;">
+                
+                <nav class="navbar" id="navbar">
+
+                    <a href="/pages/how-to.html" class="navbar--element" style="color: #c4c4c4">How To?</a>
+                    <a class="navbar--element" style="color: #c4c4c4" href="../index.html">Home Page</a>
+                    <a href="/pages/portfolio.html" class="navbar--element"  >My Portfolio</a>
+                    <!-- <button class="portfolio--button navbar--element" onclick="portfolioMenu()" id="portfolio--button">Portfolio</button>
+                   
+                    <nav class="portfolio--menu" id="portfolio--menu">
+                        <a href="/pages/web-site.html" class="portfolio--element">Web Sites Works</a>
+                        <a href="/pages/app.html" class="portfolio--element">Applications</a>
+                    </nav> -->
+                
+                </nav>
+                
+            </div>
+
+            
+            <!-- space and mobile menu's open button-->
+            
+            <div class="col- space"  style="position: relative">
+                    
+                <button id="mobile--menu--icon" onclick="openMobileMenu(this)">
+                    <img src="../images/menu-icon.png"  alt="open menu">    
+                </button>
+
+            </div>
+
+            <div class="col- space"></div>
+            
+            <!-- space between profile and content, 
+            it will be hidden on mobile-tablet devices  -->
+            <div class="desk--space col-l-1"></div>
+
+            <!-- home page content -->
+            <div class="col-  col-l-8 article--page" id="content">
+                <div class="row desktop--menu">
+                    <div class="col-l-12" style="padding: 0">
+                        <div>
+                            <nav>
+                                <a class="desktop--menu--item"  style="color: #c4c4c4" href="#">
+                                    <span>Home</span>
+                                    <div class="desktop--menu--item--border"></div> 
+                                </a>
+                                <a href="#" class="desktop--menu--item"  style="color: #c4c4c4">
+                                    <span>How to?</span>
+                                    <div class="desktop--menu--item--border"></div> 
+                                </a>
+                                <a href="index.html" class="desktop--menu--item ">
+                                    <span>My Portfolio</span>
+                                    <div class="desktop--menu--item--border"></div> 
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row content">
+
+                    <div class="col-">
+                        <div class="article--head">
+                            <h1>Head...</h1>
+                        </div>
+    
+                        <div class="article--content">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="../main.js"></script>
+
+  </body>
+</html>
