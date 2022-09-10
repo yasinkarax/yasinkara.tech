@@ -33,6 +33,12 @@
     margin-top: 20px
 }
 
+
+#content{
+    float: right
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -138,6 +144,7 @@ a{
 
 /* profile */
 .profile{
+    position: fixed;
     /* overflow-y: auto; */
     overflow: hidden;
     scrollbar-color: transparent;
