@@ -28,6 +28,11 @@
     --home--page--font--family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+/* view github repo button */
+.github--repo{
+    margin-top: 20px
+}
+
 body{
     margin: 0;
     padding: 0;
