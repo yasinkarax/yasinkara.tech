@@ -159,7 +159,7 @@ a{
     @media screen and (min-width: 991px){
         .profile{
             /* background: var(--main-bgColor); */
-            
+            position: relative;
             background: var(--main-bgColor);
             overflow: hidden;
             flex-direction: column;
