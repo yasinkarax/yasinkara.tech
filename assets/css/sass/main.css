@@ -265,14 +265,14 @@ p {
   line-height: 1.36;
   word-spacing: -1px;
 }
-
 @media screen and (min-width: 991px) {
-  p {
+  p p {
     word-spacing: none;
     font-size: 1.4rem;
     letter-spacing: 0.0099em;
   }
 }
+
 .app--page {
   background: #d9d9d9;
   border-radius: 20px;
