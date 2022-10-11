@@ -124,17 +124,16 @@ a {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 991px) {
-  .profile .profile {
-    position: fixed;
-    background: #c4c4c4;
-    overflow: hidden;
-    flex-direction: column;
-    display: flex;
-    height: auto !important;
-    padding: 40px 30px;
-    align-items: center;
-  }
+
+.profile {
+  position: fixed;
+  background: #c4c4c4;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  height: auto !important;
+  padding: 40px 30px;
+  align-items: center;
 }
 
 .profile--img {
@@ -142,12 +141,12 @@ a {
   display: flex;
   justify-content: center;
 }
+
 @media screen and (min-width: 992px) {
-  .profile--img .profile--img {
+  .profile--img {
     display: block;
   }
 }
-
 .author {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   grid-area: author;
@@ -156,13 +155,13 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
 @media screen and (min-width: 992px) {
-  .author .author {
+  .author {
     display: block;
     text-align: center;
   }
 }
-
 .name {
   font-size: 27px;
 }
@@ -244,12 +243,12 @@ a {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 3.7rem;
 }
+
 @media screen and (min-width: 991px) {
-  .home--page--head h1 .home--page--head h1 {
+  .home--page--head h1 {
     font-size: 4rem;
   }
 }
-
 .home--page--head h2 {
   margin-top: 0px;
   padding-left: 20px;
@@ -266,14 +265,14 @@ p {
   line-height: 1.36;
   word-spacing: -1px;
 }
+
 @media screen and (min-width: 991px) {
-  p p {
+  p {
     word-spacing: none;
     font-size: 1.4rem;
     letter-spacing: 0.0099em;
   }
 }
-
 .app--page {
   background: #d9d9d9;
   border-radius: 20px;
