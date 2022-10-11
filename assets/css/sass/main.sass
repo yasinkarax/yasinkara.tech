@@ -94,7 +94,7 @@ a
     text-decoration: none  
     margin-top: 25px  
     color: black  
-    font-size: var(--mobile--navbar--font--size)  
+    font-size:  $mobile--navbar--font--size
     font-weight: bold  
   
 
@@ -125,16 +125,16 @@ a
     border-radius: 27px  
     // padding: 60px 0px    
     // height: 350px    
-    background: var(--secondary-bgColor)  
+    background:  $secondary-bgColor
     display: flex  
     flex-direction: column  
     align-items: center  
   
     @media screen and (min-width: 991px)  
         .profile  
-            // background: var(--main-bgColor)    
+            // background:  $main-bgColor    
             position: fixed  
-            background: var(--main-bgColor)  
+            background:  $main-bgColor  
             overflow: hidden  
             flex-direction: column  
             display: flex  
@@ -169,7 +169,7 @@ a
           
       
 .author  
-    font-family: var(--home--page--font--family)  
+    font-family:  $home--page--font--family  
     grid-area: author  
     display: flex  
     padding: 23px 0  
@@ -252,21 +252,21 @@ a
 
 // home page css  
 .home--page  
-    background: var(--main-bgColor)  
+    background:  $main-bgColor
     border-radius: 20px  
     padding: 55px 45px  
     word-wrap: break-word  
   
 .home--page--head h1  
     margin-bottom: 0px  
-    color: var(--head--color)  
-    font-family: var(--home--page--font--family)  
-    font-size: var(--mobile--head--font--size)  
+    color:  $head--color
+    font-family:  $home--page--font--family
+    font-size:  $mobile--head--font--size 
   
     @media screen and (min-width:   991px)  
         
         .home--page--head h1  
-            font-size: var(--desktop--head--font--size)  
+            font-size:  $desktop--head--font--size
           
       
 .home--page--head h2  
@@ -274,13 +274,13 @@ a
     padding-left: 20px  
       
 .home--page--content  
-    font-size: var(--mobile--home--page--font--size)  
+    font-size:  $mobile--home--page--font--size
     word-spacing: 2px  
   
 
 p  
-    font-family: var(--home--page--font--family)  
-    font-size: var(--mobile--home--page--font--size)  
+    font-family:  $home--page--font--family
+    font-size:  $mobile--home--page--font--size
     line-height: 1.36  
     word-spacing: -1px  
   
@@ -288,7 +288,7 @@ p
             
         p  
             word-spacing: none  
-            font-size: var(--desktop--home--page--font--size)  
+            font-size:  $desktop--home--page--font--size
             letter-spacing: 0.0099em  
           
       
@@ -322,7 +322,7 @@ p
     width: 100%  
     justify-content: center  
     padding: 10px 5px  
-    font-family: var(--home--page--font--family)  
+    font-family:  $home--page--font--family
     align-items: center  
     transition: none  
     border-radius: 6px  
@@ -343,11 +343,11 @@ p
     padding: 50px 5px 30px 5px  
     border-radius: 20px  
     margin-top: 60px  
-    background-color: var(--secondary-bgColor)  
+    background-color:  $secondary-bgColor
   
 @media screen and (max-width: 991px)  
     .content  
-        background-color: var(--secondary-bgColor)  
+        background-color:  $secondary-bgColor
         margin-top: 0px  
         padding-top: 0  
       
@@ -380,7 +380,7 @@ p
   
 .web--desc h1  
     font-size: 1.6rem  
-    font-family: var(--home--page--font--family)  
+    font-family:  $home--page--font--family
   
 .web--desc p  
     margin: -10px 0 0 0px  
@@ -389,13 +389,13 @@ p
   
 
 .article--page  
-    background: var(--main-bgColor)  
+    background:  $main-bgColor
     border-radius: 20px  
     padding: 55px 20px  
   
 @media screen and (max-width: 991px)  
     .article--page  
-        background-color: var(--secondary-bgColor)  
+        background-color:  $secondary-bgColor
         padding: 55px 0px !important  
       
   
@@ -434,9 +434,9 @@ p
     text-decoration: underline  
   
 .desktop--menu--item  
-    background: var(--secondary-bgColor)  
+    background:  $secondary-bgColor
     padding: 10px 3%  
-    font-family: var(--home--page--font--family)  
+    font-family:  $home--page--font--family
     position: relative  
     font-size: 1.2rem  
     color: black  
@@ -450,7 +450,7 @@ p
     color: #000000  
     display: none  
     position: absolute  
-    background: var(--secondary-bgColor)  
+    background:  $secondary-bgColor
     top: 55px  
     font-size: 1rem  
     left: 28px  

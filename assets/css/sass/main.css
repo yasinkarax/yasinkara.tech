@@ -91,7 +91,7 @@ a {
   text-decoration: none;
   margin-top: 25px;
   color: black;
-  font-size: var(--mobile--navbar--font--size);
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -119,7 +119,7 @@ a {
   overflow: hidden;
   scrollbar-color: transparent;
   border-radius: 27px;
-  background: var(--secondary-bgColor);
+  background: #d9d9d9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +127,7 @@ a {
 @media screen and (min-width: 991px) {
   .profile .profile {
     position: fixed;
-    background: var(--main-bgColor);
+    background: #c4c4c4;
     overflow: hidden;
     flex-direction: column;
     display: flex;
@@ -149,7 +149,7 @@ a {
 }
 
 .author {
-  font-family: var(--home--page--font--family);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   grid-area: author;
   display: flex;
   padding: 23px 0;
@@ -232,7 +232,7 @@ a {
 }
 
 .home--page {
-  background: var(--main-bgColor);
+  background: #c4c4c4;
   border-radius: 20px;
   padding: 55px 45px;
   word-wrap: break-word;
@@ -240,13 +240,13 @@ a {
 
 .home--page--head h1 {
   margin-bottom: 0px;
-  color: var(--head--color);
-  font-family: var(--home--page--font--family);
-  font-size: var(--mobile--head--font--size);
+  color: red;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 3.7rem;
 }
 @media screen and (min-width: 991px) {
   .home--page--head h1 .home--page--head h1 {
-    font-size: var(--desktop--head--font--size);
+    font-size: 4rem;
   }
 }
 
@@ -256,20 +256,20 @@ a {
 }
 
 .home--page--content {
-  font-size: var(--mobile--home--page--font--size);
+  font-size: 1.9rem;
   word-spacing: 2px;
 }
 
 p {
-  font-family: var(--home--page--font--family);
-  font-size: var(--mobile--home--page--font--size);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.9rem;
   line-height: 1.36;
   word-spacing: -1px;
 }
 @media screen and (min-width: 991px) {
   p p {
     word-spacing: none;
-    font-size: var(--desktop--home--page--font--size);
+    font-size: 1.4rem;
     letter-spacing: 0.0099em;
   }
 }
@@ -297,7 +297,7 @@ p {
   width: 100%;
   justify-content: center;
   padding: 10px 5px;
-  font-family: var(--home--page--font--family);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   align-items: center;
   transition: none;
   border-radius: 6px;
@@ -315,12 +315,12 @@ p {
   padding: 50px 5px 30px 5px;
   border-radius: 20px;
   margin-top: 60px;
-  background-color: var(--secondary-bgColor);
+  background-color: #d9d9d9;
 }
 
 @media screen and (max-width: 991px) {
   .content {
-    background-color: var(--secondary-bgColor);
+    background-color: #d9d9d9;
     margin-top: 0px;
     padding-top: 0;
   }
@@ -349,7 +349,7 @@ p {
 
 .web--desc h1 {
   font-size: 1.6rem;
-  font-family: var(--home--page--font--family);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .web--desc p {
@@ -359,14 +359,14 @@ p {
 }
 
 .article--page {
-  background: var(--main-bgColor);
+  background: #c4c4c4;
   border-radius: 20px;
   padding: 55px 20px;
 }
 
 @media screen and (max-width: 991px) {
   .article--page {
-    background-color: var(--secondary-bgColor);
+    background-color: #d9d9d9;
     padding: 55px 0px !important;
   }
 }
@@ -407,9 +407,9 @@ p {
 }
 
 .desktop--menu--item {
-  background: var(--secondary-bgColor);
+  background: #d9d9d9;
   padding: 10px 3%;
-  font-family: var(--home--page--font--family);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   position: relative;
   font-size: 1.2rem;
   color: black;
@@ -424,7 +424,7 @@ p {
   color: #000000;
   display: none;
   position: absolute;
-  background: var(--secondary-bgColor);
+  background: #d9d9d9;
   top: 55px;
   font-size: 1rem;
   left: 28px;
