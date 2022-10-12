@@ -11,12 +11,13 @@
   .container {
     max-width: 95%;
   }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 [class*=col-] {
   float: left;
   padding: 15px;

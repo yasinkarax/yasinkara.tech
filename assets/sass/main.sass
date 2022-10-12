@@ -5,6 +5,9 @@
     margin-top: 20px
  
 
+* 
+    transition: 0.3s 
+ 
 
 #content 
     float: right
@@ -76,6 +79,7 @@ a
 
 .desk--space 
     display: none  
+
 @media only screen and (min-width: 991px)  
     .desk--space 
         display: block  
@@ -89,7 +93,13 @@ a
  
 // .navbar >  a:nth-child(2) 
     margin-top: 26px 
+
+    
+    a:first-child 
+        margin-top: 0  
    
+
+
 .navbar--element 
     padding: 15px 30px 
     background: #d9d9d9 
@@ -100,22 +110,20 @@ a
     font-weight: bold 
  
 
-.navbar a:first-child 
-    margin-top: 0  
 .navbar--element--select 
     position: relative 
  
 
-.navbar--element--select::before 
-    content: " " 
-    top: -1px 
-    left: 0 
-    position: absolute 
-    background: #ff0000 
-    height: 60px 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) 
-    width: 11px 
-    border-radius: 2px 
+    &::before 
+        content: " " 
+        top: -1px 
+        left: 0 
+        position: absolute 
+        background: #ff0000 
+        height: 60px 
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) 
+        width: 11px 
+        border-radius: 2px 
  
 
 
@@ -132,43 +140,28 @@ a
     flex-direction: column 
     align-items: center 
  
-    @media screen and (min-width: 991px) 
-        .profile 
-            // background: $main-bgColor   
-            position: fixed 
-            background: $main-bgColor 
-            overflow: hidden 
-            flex-direction: column 
-            display: flex 
-            height: auto !important 
-            padding: 40px 30px 
-            align-items: center 
+@media screen and (min-width: 991px) 
+    .profile 
+        // background: $main-bgColor   
+        position: fixed 
+        background: $main-bgColor 
+        overflow: hidden 
+        flex-direction: column 
+        display: flex 
+        height: auto !important 
+        padding: 40px 30px 
+        align-items: center 
          
-     
-    // div:nt
-    // @media screen and (min-width: 768px) and (max-width: 992px) 
-        .profile 
-            padding: 40px 110px
-             
-       
 
-    // @media screen and (min-width: 750px) 
-        .profile 
-            grid-template-areas: 
-                'avatar social-media'
-                'author .' 
-            display: grid 
-         
-       
 
 .profile--img 
     grid-area: avatar 
     display: flex 
     justify-content: center 
  
-    @media screen and (min-width: 992px) 
-        .profile--img 
-            display: block 
+@media screen and (min-width: 992px) 
+    .profile--img 
+        display: block 
          
      
 .author 
@@ -179,10 +172,10 @@ a
     flex-direction: column 
     align-items: center 
  
-    @media screen and (min-width: 992px) 
-        .author 
-            display: block 
-            text-align: center 
+@media screen and (min-width: 992px) 
+    .author 
+        display: block 
+        text-align: center 
          
      
 .name 
@@ -199,14 +192,16 @@ a
     display: flex 
     justify-content: space-around 
     width: 100% 
+    
+    
+    a 
+        display: block 
+        width: 40px 
  
 .social--media--head 
     font-size: 24px 
     align-self: flex-start 
  
-.social--media a 
-    display: block 
-    width: 40px 
  
 @media screen and (min-width: 992px) 
     .social--media a 
@@ -242,9 +237,7 @@ a
     font-weight: bold 
  
 
-* 
-    transition: 0.3s 
- 
+
 
 
 
@@ -268,10 +261,10 @@ a
     font-family: $home--page--font--family 
     font-size: $mobile--head--font--size 
  
-    @media screen and (min-width:   991px) 
+@media screen and (min-width:   991px) 
         
-        .home--page--head h1 
-            font-size: $desktop--head--font--size 
+    .home--page--head h1 
+        font-size: $desktop--head--font--size 
          
      
 .home--page--head h2 
@@ -289,12 +282,12 @@ p
     line-height: 1.36 
     word-spacing: -1px 
  
-    @media screen and (min-width:   991px) 
-            
-        p 
-            word-spacing: none 
-            font-size: $desktop--home--page--font--size 
-            letter-spacing: 0.0099em 
+@media screen and (min-width:   991px) 
+    
+    p 
+        word-spacing: none 
+        font-size: $desktop--home--page--font--size 
+        letter-spacing: 0.0099em 
          
      
 
@@ -309,9 +302,9 @@ p
     padding: 55px 45px 
     word-wrap: break-word 
  
-.app--page a 
-    text-decoration: none 
-    color: black 
+    a 
+        text-decoration: none 
+        color: black 
  
 .app--img img, video 
     width: 100% 
@@ -335,9 +328,9 @@ p
     color: white 
     max-width: 100% 
  
-.github--button img 
-    width: 30px 
-    margin-right: 8px 
+    img 
+        width: 30px 
+        margin-right: 8px 
  
 //--------------------------------  
 
@@ -356,18 +349,19 @@ p
         margin-top: 0px 
         padding-top: 0 
      
-    // .content [class*="col-"]  
-        padding-left: 0 
-        padding-right: 0 
+   
          
     
  
-.web--page--content a  
-    text-decoration: none 
-    color: black 
+.web--page--content
+    display: block
+    
+    a  
+        text-decoration: none 
+        color: black 
  
-.web--page--content img 
-    width: 100% 
+    img 
+        width: 100% 
  
 
 @media only screen and (min-width:   991px)  
@@ -380,8 +374,8 @@ p
     overflow: hidden 
  
 
-.web--img img:hover 
-    transform: scale(1.1) 
+    img:hover 
+        transform: scale(1.1) 
  
 .web--desc h1 
     font-size: 1.6rem 
@@ -422,22 +416,20 @@ p
 .desktop--menu 
     display: none 
  
-.desktop--menu nav 
-    width: 100% 
-    display: flex 
-    justify-content: space-between 
+    nav 
+        width: 100% 
+        display: flex 
+        justify-content: space-between 
  
 
 .not--allowed 
     color: #c4c4c4 !important 
  
-.not--allowed:hover 
-    cursor: not-allowed 
+    &:hover 
+        cursor: not-allowed 
  
 
-.desktop--menu--item:active 
-    text-decoration: underline 
- 
+
 .desktop--menu--item 
     background: $secondary-bgColor 
     padding: 10px 3% 
@@ -447,8 +439,12 @@ p
     color: black 
     border-radius: 15px 
  
-.desktop--menu--item:last-child 
-    overflow: hidden 
+    &:active 
+        text-decoration: underline 
+ 
+
+    &:last-child 
+        overflow: hidden 
  
 
 .very--soon--text 
@@ -466,13 +462,13 @@ p
     padding: 2px 9px 
  
 
-.very--soon--text::after 
-    content: "" 
-    position: absolute 
-    top: -6px 
-    border: 8px solid #d9d9d9 
-    border-color: #d9d9d9 transparent transparent transparent 
-    left: 38px 
+    &::after 
+        content: "" 
+        position: absolute 
+        top: -6px 
+        border: 8px solid #d9d9d9 
+        border-color: #d9d9d9 transparent transparent transparent 
+        left: 38px 
  
 @media screen and (min-width: 992px) 
     #desktop--menu 
@@ -483,8 +479,10 @@ p
         min-width: 144px 
         text-align: center 
      
-    .desktop--menu--item:hover .very--soon--text 
-        display: block  
+        &:hover  .very--soon--text
+            display: block  
+        
+        
  
 .desktop--menu--item:focus .desktop--menu--item--border 
     left: 0 
