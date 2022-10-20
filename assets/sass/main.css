@@ -47,6 +47,10 @@ a {
     display: none;
   }
 }
+.navbar--element:first-child {
+  margin-top: 5px;
+}
+
 #mobile--menu--icon {
   cursor: pointer;
   position: absolute;
